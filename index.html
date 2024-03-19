@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="big-card">
+    <div class="small-card">
+      <!-- Content of the smaller card -->
+      <div class="form-heading" onclick="showFormSection(1)">Step 1: YOUR INFO</div>
+      <div class="form-heading" onclick="showFormSection(2)">Step 2: SELECT PLAN</div>
+      <div class="form-heading" onclick="showFormSection(3)">Step 3: ADD-ONS</div>
+      <div class="form-heading" onclick="showFormSection(4)">Step 4: SUMMARY</div>
+    </div>
+    <div class="content">
+      <div class="form-section" id="section1">
+        <h2>Personal Info</h2>
+        <p class="muted-text">Please provide your name,email address and phone number.</p>
+        <form>
+          <div class="content-text">
+          <label for="name">Name</label><br>
+          <input type="text" placeholder="e.g. Stephen King" id="name"><br><br>
+          <label for="mail">Email Address</label><br>
+          <input type="email" placeholder=" e.g. stephenking@lorem.com
+          " id="mail"><br><br>
+          <label for="contact">Name</label><br>
+          <input type="text" placeholder="e.g. +233 55 359 7056" id="contact"><br><br>
+          <!-- Next button -->
+          <button type="button" onclick="showFormSection(2)">Next Step</button>
+        </form>
+        </div>
+      </div>
+    
+      <div class="form-section" id="section2">
+        <h2>Select your plan</h2>
+        <p class="muted-text">You have the option of monthly or yearly billing.</p>
+        
+      <div class="bordered-container">
+         <img src="assets\images\icon-arcade.svg" alt="icon-arcade"><br><br>
+          Arcade<br>   $9/mo
+      </div><br>
+
+      <div class="bordered-container">
+        <img src="assets\images\icon-advanced.svg" alt="icon-advanced"><br><br>
+         Advanced<br>   $12/mo
+     </div><br>
+  
+
+          <!-- Previous and Next buttons -->
+          <button type="button" onclick="showFormSection(1)">Previous</button>
+          <button type="button" onclick="showFormSection(3)">Next</button>
+        </form>
+      </div>
+
+      <div class="form-section" id="section2a">
+        <h2>Select your plan</h2>
+        <p class="muted-text">You have the option of monthly or yearly billing.</p>
+        <form>
+          <!-- Contact info fields -->
+          <input type="text" placeholder="Phone"><br>
+          <input type="text" placeholder="Address"><br>
+          <!-- Previous and Next buttons -->
+          <button type="button" onclick="showFormSection(1)">Previous</button>
+          <button type="button" onclick="showFormSection(3)">Next</button>
+        </form>
+      </div>
+
+      <div class="form-section" id="section3">
+        <h2>Pick add-ons</h2>
+          <p class="muted-text">Add-ons help enhance your gaming experience.</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Online service<br>
+              <span class="muted-text">Access to multiplayer games</span>
+              <span style="float: right;">+$1/mo</span>
+            </li><br>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Larger storage<br>
+              <span class="muted-text">Extra 1TB of cloud save</span>
+               <span style="float: right;">+$2/mo</span>
+            </li><br>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Customizable Profile<br>
+              <span class="muted-text">Custom theme on your profile </span>
+              <span style="float: right;">+$2/mo</span>
+            </li><br>
+        <form> 
+          <button type="button" onclick="showFormSection(2)">Go back</button>
+          <button type="button" onclick="showFormSection(4)">Next Step</button>
+        </form>
+      </div>
+    
+      <div class="form-section" id="section4">
+        <h2>Finishing up</h2>
+        <p class="muted-text">Double-check everything looks OK before confirming.</p>
+        <table class="table table-sm">
+          <caption>List of users</caption>
+          <tbody>
+            <tr>
+            <td>Arcade(Yearly)<br>
+            <span class="muted-text">Change</span>
+            <span style="float: right;"> $9/mo</span></td></tr>
+            <tr><td><span class="muted-text">Online service</span>
+               <span style="float: right;"> $1/mo</span>
+              <span class="muted-text">Larger Storage</td></tr>
+          </tbody>
+        </table>
+        <!-- Previous button -->
+        <button type="button" onclick="showFormSection(3)">Previous</button>
+      </div>
+    </div>
+    
+      <!-- Content of the bigger card -->
+    </div>
+  </div>
+  
+  
+  
+  Arcade
+
+
+  Advanced
+  $12/mo
+
+  Pro
+  $15/mo
+
+  Monthly
+  Yearly
+
+
+  
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  Total (per month/year)
+
+  Go Back
+  Confirm
+
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+
+  Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.
+
+  <!-- Step 5 end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

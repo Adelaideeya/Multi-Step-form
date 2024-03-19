@@ -1,0 +1,79 @@
+.big-card {
+    position: relative;
+    width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height:600px;
+    margin-top:50px;
+  }
+  
+  .small-card {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    width: 250px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height:450px;
+    background-image:url("assets/images/bg-sidebar-desktop.svg");
+    background-size: cover; 
+  }
+  
+  .content {
+    margin-left: 240px; 
+    padding: 20px;
+    flex-grow: 1;
+  }
+
+  .form-heading {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .form-section {
+    display: none;
+  }
+  
+  .form-section.active {
+    display: block;
+  }
+
+  .muted-text {
+    color: #8c8888; 
+    opacity: 0.6; 
+  }
+
+  label{
+    color: navy;
+    font-size: large;
+  }
+
+  #name,#mail,#contact{
+    border: 1px solid #999; 
+    border-radius: 5px;
+    width:300px ;
+    height:40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  #name::placeholder, #mail::placeholder, #contact::placeholder {
+    color: #999; 
+    font-style: italic;
+    font-size: small;
+  }
+
+  .bordered-container{
+    border:1px solid #8c8888;
+    width:110px;
+    padding:30px;
+    border-radius:5px;
+  }
+
+  .content-text{
+    text-align: right;
+  }

@@ -21,12 +21,14 @@
     height:450px;
     background-image:url("assets/images/bg-sidebar-desktop.svg");
     background-size: cover; 
+      flex: 0 0 30%; 
   }
   
   .content {
     margin-left: 240px; 
     padding: 20px;
     flex-grow: 1;
+      flex: 0 0 65%;
   }
 
   .form-heading {
@@ -70,10 +72,28 @@
   .bordered-container{
     border:1px solid #8c8888;
     width:110px;
-    padding:30px;
+    padding:10px;
     border-radius:5px;
   }
 
-  .content-text{
-    text-align: right;
+  .container {
+    display: flex;
+    justify-content: space-between; 
+  }
+ 
+  .circle {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px; 
+    margin-right: 10px; 
+    border: 1px solid white;
+  }
+
+  .form-section {
+    margin-left: 20px;
   }

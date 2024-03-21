@@ -12,7 +12,7 @@
   .small-card {
     position: absolute;
     top: 50%;
-    left: 3%;
+    left: 2%;
     transform: translateY(-50%);
     width: 250px; 
     padding: 20px;
@@ -22,18 +22,22 @@
     background-image:url("assets/images/bg-sidebar-desktop.svg");
     background-size: cover; 
       flex: 0 0 30%; 
+      margin-top: -0.5px;
+      height: 570px;
   }
   
   .content {
-    margin-left: 240px; 
+    margin-left: 250px; 
     padding: 20px;
     flex-grow: 1;
       flex: 0 0 65%;
+
   }
 
   .form-heading {
     cursor: pointer;
     margin-bottom: 10px;
+    color: white;
   }
 
   .form-section {
@@ -92,8 +96,13 @@
     font-size: 16px; 
     margin-right: 10px; 
     border: 1px solid white;
+
   }
 
   .form-section {
     margin-left: 20px;
   }
+
+  .selected {
+    background-color: rgb(161, 231, 224);
+}

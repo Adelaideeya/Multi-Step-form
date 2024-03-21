@@ -9,6 +9,11 @@ function showFormSection(sectionNumber) {
     // Show the selected form section
     var selectedSection = document.getElementById('section' + sectionNumber);
     selectedSection.classList.add('active');
+
+    document.getElementById("myElement").addEventListener("click", function() {
+      this.classList.toggle("selected");
+  });
+  
   }
     
   
